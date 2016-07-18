@@ -1,0 +1,49 @@
+﻿input {
+    margin-bottom: 5px;
+}
+
+.action-row {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.flight-row {
+    margin-top: 20px;
+}
+
+.price-header {
+    font-size: large;
+}
+
+.route-header {
+    margin: 5px;
+}
+
+.route-block {
+    border: solid 1px black;
+    border-radius: 4px;
+}
+
+.flight-number {
+    font-size: small;
+}
+
+.airline-name {
+    font-size: x-small;
+    margin-bottom: 4px;
+}
+
+.flight-city {
+    margin: 8px 4px 0px 4px;
+}
+
+.flight-date {
+    margin: 4px;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+    margin-right:-4px;
+}
