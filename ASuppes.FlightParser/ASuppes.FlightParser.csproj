@@ -181,6 +181,7 @@
     <Compile Include="Parser\Models\OfferModel.cs" />
     <Compile Include="Parser\Models\SegmentModel.cs" />
     <Compile Include="Parser\MomondoParser.cs" />
+    <Compile Include="Parser\Utilities\BestOfferFinder.cs" />
     <Compile Include="Parser\Utilities\HttpRequestData.cs" />
     <Compile Include="Parser\Utilities\HttpResponseData.cs" />
     <Compile Include="Parser\Utilities\Interfaces\IHttpClient.cs" />

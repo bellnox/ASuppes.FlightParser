@@ -32,7 +32,8 @@ namespace ASuppes.FlightParser.Parser
             return Task<SearchResultModel>.Run(() => {
                 string searchId = LoadSearchData(searchRequest);
                 SearchSummaryModel searchResult = LoadTicketsData(searchId);
-                return searchResult.FindBestOption();
+                BestOfferFinder offerFinder = new BestOfferFinder(searchResult);
+                return offerFinder.GetBestOffer();
             });
         }
 
