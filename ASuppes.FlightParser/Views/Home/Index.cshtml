@@ -7,10 +7,10 @@
             <input type="text" class="form-control" placeholder="Куда" ng-model="destinationPlace">
         </div>
         <div class="col-xs-6 col-sm-3">
-            <input type="text" class="form-control datepicker-input" placeholder="Когда" ng-model="departureDate">
+            <input type="text" class="form-control" id="startDatepicker" placeholder="Когда" ng-model="departureDate">
         </div>
         <div class="col-xs-6 col-sm-3">
-            <input type="text" class="form-control datepicker-input" placeholder="Обратно" ng-model="returnDate">
+            <input type="text" class="form-control" id="endDatepicker" placeholder="Обратно" ng-model="returnDate">
         </div>
     </div>
 
@@ -22,7 +22,7 @@
 
     <div class="row" ng-show="isLoading">
         <div class="col-xs-12 text-center">
-            <img src="~/Content/loading.gif" />
+            <img src="~/Content/img/loading.gif" />
         </div>
     </div>
 
@@ -41,14 +41,14 @@
         <div class="row">
             <div class="col-xs-12 col-md-6" ng-repeat="route in searchResult.routes | orderBy:route.isReturn">
                 <div class="route-header text-center">
-                    <span>{{route.departureCityName}}</span>
-                    <img height="24" src="~/Content/plane.png" />
-                    <span>{{route.destinationCityName}}</span>
+                    <span class="route-city">{{route.departureCityName}}</span>
+                    <img height="24" src="~/Content/img/plane.png" />
+                    <span class="route-city">{{route.destinationCityName}}</span>
                 </div>
                 <div class="route-block">
                     <div class="row" ng-repeat="flight in route.flights | orderBy:flight.orderNumber">
                         <div class="col-xs-2 text-center vcenter">
-                            <div><img src="{{flight.airlineImageUrl}}" alt="{{flight.airlineName}}" /></div>
+                            <div class="airline-ico"><img src="{{flight.airlineImageUrl}}" alt="{{flight.airlineName}}" /></div>
                             <div class="flight-number">{{flight.flightNumber}}</div>
                             <div class="airline-name">{{flight.airlineName}}</div>
                         </div>
@@ -61,7 +61,7 @@
                             </div>
                         </div>
                         <div class="col-xs-2 text-center vcenter">
-                            <img width="32" src="~/Content/right_arrow.png" />
+                            <img width="32" src="~/Content/img/right_arrow.png" />
                         </div>
                         <div class="col-xs-4 text-center vcenter">
                             <div class="flight-city">

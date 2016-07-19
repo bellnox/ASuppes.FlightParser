@@ -1,4 +1,10 @@
-﻿$('input.datepicker-input').datepicker();
+﻿var startDatepicker = $('#startDatepicker');
+var endDatepicker = $('#endDatepicker');
+startDatepicker.datepicker({ startDate: '0d' })
+    .on('changeDate', function (e) {
+        endDatepicker.datepicker('setStartDate', e.date);
+    });
+endDatepicker.datepicker({ startDate: '0d' });
 
 var sfApp = angular.module('sfApp', []);
 

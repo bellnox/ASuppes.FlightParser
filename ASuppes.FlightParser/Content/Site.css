@@ -19,18 +19,28 @@
     margin: 5px;
 }
 
+.route-city {
+    margin: 0px 4px;
+}
+
 .route-block {
     border: solid 1px black;
     border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
 }
 
 .flight-number {
     font-size: small;
 }
 
+.airline-ico {
+    margin-top: 8px;
+}
+
 .airline-name {
     font-size: x-small;
-    margin-bottom: 4px;
+    margin-bottom: 8px;
 }
 
 .flight-city {
@@ -38,7 +48,7 @@
 }
 
 .flight-date {
-    margin: 4px;
+    margin: 4px 4px 8px 4px;
 }
 
 .vcenter {
